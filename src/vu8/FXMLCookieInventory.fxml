@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane id="BorderPane" prefHeight="80" prefWidth="330" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vu8.FXMLCookieInventoryController">
+    <top>
+        <HBox Spacing="10">
+            <Label text="Select Cookie:" />
+            <ComboBox fx:id="ddlFlavour" editable="true" visibleRowCount="3"/>
+        </HBox>
+        <BorderPane.margin>
+            <Insets top="5" left="7" bottom="10" />
+        </BorderPane.margin>
+    </top>
+    <center>
+        <VBox spacing="10">
+            <HBox spacing="20">
+                <VBox>
+                    <Label text="Enter Quantity Sold:" />
+                    <TextField fx:id="txtQuantitySold"/>
+                    <Button text="_Sell" maxWidth="Infinity" mnemonicParsing="true" onAction="#Sell" />
+                </VBox>
+                <VBox>
+                    <Label text="Enter Quantity Baked:" />
+                    <TextField fx:id="txtQuantityBaked"/>
+                    <Button text="_Add" maxWidth="Infinity" mnemonicParsing="true" onAction="#Add" />
+                </VBox>
+            </HBox>
+            <HBox>
+                <Pane HBox.hgrow="ALWAYS" />
+                <Button text="E_xit" mnemonicParsing="true" onAction="#Exit" />
+            </HBox>
+        </VBox>
+        <BorderPane.margin>
+            <Insets top="5" left="7" bottom="10" />
+        </BorderPane.margin>
+    </center>
+    <bottom>
+    </bottom>
+</BorderPane>
