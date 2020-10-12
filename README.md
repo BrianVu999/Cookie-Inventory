@@ -24,7 +24,7 @@ Functions:
 
 1.2c/* Home-Sell (Cookie Quantity Validation from database) 
 
-<img src="Screenshots/Home-Validation(CookieSellQuan).PNG" width="500">
+
 // Not enough cookies to sell
 
 1.3/ Home-Exit
