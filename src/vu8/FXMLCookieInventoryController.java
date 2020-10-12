@@ -127,7 +127,7 @@ public class FXMLCookieInventoryController implements Initializable {
                 alertMessage += "You must enter a quantity that is greater than 0.";
             } else {
                 CookieInventoryItem selectedCookieFromDB = cookieDatabase.find(selectedCookie.getId());
-                if (cookieDatabase.isEmpty()) {
+                if (selectedCookieFromDB==null) {
                     cookieDatabase.add(new CookieInventoryItem(selectedCookie.getId(), bakedQty));
                 } else {
                     cookieDatabase.remove(selectedCookieFromDB);
